@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mug Card Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contentbox {
+            display: flex;
+            height: 400px;
+            width: 600px;
+            border-radius: 20px;
+            background-color: white;
+            gap: 4px;
+        }
+        
+        .firstdiv {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            position: relative;
+            /* border: 1px solid red; */
+            overflow: hidden;
+            /* width: fit-content; */
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            /* position: relative; */
+            object-fit: cover;
+            /* overflow: hidden; */
+        }
+        
+        .seconddiv {
+            padding: 13px;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            /* border: 1px solid blue; */
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        h2 {
+            font-size: 33px;
+            font-weight: 900;
+            font-family: "Fraunces", sans-serif;
+            line-height: 1em;
+        }
+        
+        .coffeemug {
+            /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 5px;
+            line-height: normal;
+        }
+        
+        .description {
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(34, 57, 34);
+            line-height: normal;
+            margin-bottom: 0.2em;
+        }
+        
+        .price {
+            color: #1d3e32;
+            font-size: 33px;
+            font-weight: 2.3rem;
+            font-weight: 900;
+            margin-right: 12px;
+        }
+        
+        .realprice {
+            font-size: 18px;
+            text-decoration: line-through;
+        }
+        
+        .amountdiv {
+            margin-top: 0.1em;
+        }
+        
+        .btn {
+            display: flex;
+            gap: 12px;
+            font-weight: 200;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 99%;
+            background-color: #1d3e32;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .btnimg {
+            height: 18px;
+            width: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="contentbox">
+        <div class="firstdiv">
+            <img src="mug.jpg" />
+        </div>
+        <div class="seconddiv">
+            <p class="coffeemug"> COFFEE MUG</p>
+            <h2>White Coffee
+                <br> Mug </h2>
+            <p class="description"> Coffee Mugs are designed to express emotions. These are acclaimed for their amazing designs & superior quality. </p>
+            <p class="amountdiv">
+                <span class="price">₹149</span>
+                <span class="realprice">
+                 <del>₹230</del>
+             </span>
+            </p>
+
+            <button class="btn">
+                <img src="download.png" class="btnimg" />
+                <span class="btntext">Add to Cart</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<body>
+
+</body>
+
+</html>
